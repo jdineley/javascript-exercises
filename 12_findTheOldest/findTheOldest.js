@@ -4,8 +4,8 @@ const findTheOldest = function(people) {
         if(!(acc.yearOfDeath)) acc.yearOfDeath = now.getFullYear();
         if(!(cur.yearOfDeath)) cur.yearOfDeath = now.getFullYear();
         if(acc.yearOfDeath && cur.yearOfDeath){
-            if((acc.yearOfDeath - acc.yearOfBirth) > (cur.yearOfDeath - acc.yearOfBirth)){
-                return acc;
+            if((acc.yearOfDeath - acc.yearOfBirth) > (cur.yearOfDeath - cur.yearOfBirth)){
+                return acc; 
             } else {
                 return cur;
             }
