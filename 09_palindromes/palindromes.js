@@ -5,7 +5,7 @@ const palindromes = function (str) {
     for(let i = arr.length-1; i >= 0; i--){
         arrRev.push(arr[i]);
     }
-    return arr.join('') === arrRev.join('')
+    return replaced === arrRev.join('')
 };
 
 // Do not edit below this line
